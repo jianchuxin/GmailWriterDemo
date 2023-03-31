@@ -15,12 +15,20 @@
     ],
     "permissions": [
     ],
-    
-    "content_scripts":{
+    "content_scripts":[
+        {
         "js":["scripts/content.js"],
         "matches":[
             "https://mail.google.com/*"
         ]
-    }
+        }
+    ],
+
+    "web_accessible_resources":[
+        {
+            "resources":["images/icon-16.png"],
+            "matches":["https://mail.google.com/*"]
+        }
+    ]
 
   }
