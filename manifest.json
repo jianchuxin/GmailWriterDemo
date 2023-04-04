@@ -9,26 +9,23 @@
       "128": "images/icon-128.png"
     },
     "action":{
+        "default_popup":"popup.html"
     },
     "host_permissions": [
         "https://mail.google.com/*"
     ],
-    "permissions": [
-    ],
-    "content_scripts":[
-        {
-        "js":["scripts/content.js"],
+    "content_scripts":[{
+        "js":["content.js"],
         "matches":[
             "https://mail.google.com/*"
         ]
-        }
+    }
     ],
-
-    "web_accessible_resources":[
-        {
-            "resources":["images/icon-16.png"],
-            "matches":["https://mail.google.com/*"]
-        }
+    "background":{
+        "service_worker":"background.js"
+    },
+    "permissions":[
+        "activeTab",
+        "declarativeContent"
     ]
-
-  }
+}
