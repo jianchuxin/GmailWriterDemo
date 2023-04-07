@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html{
+            font-size: 62.5%;
+        }
+
+        body{
+            color: #000;
+            list-style: none;
+            line-height: 1;
+            font-family: sans-serif;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        h1{
+            font-size: 1.5rem;
+        }   
+
+        form{
+            margin: 0 auto;
+            /* width: 50rem; */
+            display: flex;
+            /* gap: 2rem; */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .email-info{
+            font-size: 1rem;
+            font-weight: 600;
+            height: 80%;
+            width: 8rem;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            background-color: #e9ecef;
+        }
+        .message-input{
+            outline-style: none;
+            border: 0;
+            width: 32rem;
+            height: 2.5rem;
+            font-size: 1.2rem;
+            text-indent: 0.5rem;
+            border-bottom: 1px solid #e9ecef;   
+
+        }
+
+        .message{
+            font-size: 1rem;
+            padding: 0.5rem;
+            padding-right: 0;
+        }
+        .message-response{
+            line-height: 1.5;
+            white-space: pre-wrap;
+            background-color: #e9ecef;
+        }
+        .submit{
+            display: inline-block;
+            font-size: 1rem;
+            color: #a99dfa;
+            padding: 0.5rem;
+            width: 4rem;
+            height: 2.5rem;
+            border: 1px solid #a99dfa;
+            border-radius: 0.5rem;
+            background-color: #fff;
+            cursor: pointer;
+        }
+        .chat-log{
+            width: 43rem;
+            margin: 0 auto;
+        }
+
+        header{
+            margin: 1rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+
+
+        }
+
+        .logo {
+            width: 2rem;
+            height: 2rem;
+        }
+
+    </style>
+    <title>APP for chatGPT API</title>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/icon-32.png" alt="" class="logo">
+        <h1>chatGPT API Test</h1>
+    </header>
+
+    <form action="" autocomplete="off">
+        <span class = "email-info">Write an email</span>
+        <input type="text" name = "message" class = "message-input" placeholder="to my boss about a leave">
+        <button type = "submit" class="submit">Write</button>
+    </form>
+    <div class = "chat-log"></div>
+</body>
+</html>
