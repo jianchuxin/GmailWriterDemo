@@ -67,7 +67,6 @@ function createBox(subject_input){
     setIconClick(iconBox);
 }
 
-//绝对定位，在特定位置创建一个图标（不得以而为之）
 function setIconPosition(iconBox,subject_input){
     subject_input.insertAdjacentElement('afterend',iconBox);
     // const {right,bottom} = subject_input.getBoundingClientRect();
