@@ -4,7 +4,7 @@ import bodyParser from "body-parser";
 import cors from "cors";
 
 const configuration = new Configuration({
-    apiKey:'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'
+    apiKey:''
 })
 
 const openai = new OpenAIApi(configuration);
